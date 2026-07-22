@@ -168,20 +168,28 @@ header{
         display:flex;
     }
 
-    .nav-links li{
-        text-align:center;
-        margin:10px 0;
-    }
+  .nav-links{
+
+display:flex;
+
+gap:30px;
+
+list-style:none;
+
+}
 
     .search-box,
     .icons{
         display:none;
     }
 
-    .navbar{
-        justify-content:space-between;
-        align-items:center;
-    }
+   .navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    position:relative;
+}
 }
 /*=========================================
             HERO
@@ -1754,6 +1762,70 @@ footer{
 .newsletter-box{
 
     border-radius:18px;
+
+}
+
+}
+
+/*============== MOBILE NAVBAR ==============*/
+
+.menu-toggle{
+
+display:none;
+
+font-size:28px;
+
+color:#fff;
+
+cursor:pointer;
+
+}
+
+@media(max-width:768px){
+
+.menu-toggle{
+
+display:block;
+
+}
+
+.nav-links{
+
+display:none;
+
+position:absolute;
+
+top:75px;
+
+left:0;
+
+width:100%;
+
+background:#161b2d;
+
+padding:20px;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.nav-links.active{
+
+display:flex;
+
+}
+
+.search-box{
+
+display:none;
+
+}
+
+.icons{
+
+display:none;
 
 }
 
