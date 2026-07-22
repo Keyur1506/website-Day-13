@@ -43,8 +43,10 @@
         <!-- Hamburger Menu -->
 
         <div class="menu-toggle" id="menuToggle">
-                   <i class="fa-solid fa-bars"></i>
-        </div>
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
         <ul class="nav-links" id="navLinks">
 
     <li><a href="#home">Home</a></li>
@@ -1437,17 +1439,19 @@ popup.classList.remove("show");
 }
 
 </script>
-    <script>
+<script>
 
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
+const menu=document.getElementById("menuToggle");
 
-menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
+const nav=document.getElementById("navLinks");
+
+menu.onclick=function(){
+
+nav.classList.toggle("active");
+
+}
 
 </script>
-
 </body>
 
 </html>
