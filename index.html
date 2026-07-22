@@ -6,62 +6,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ShopIndia | Premium E-Commerce</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <title>ShopIndia | Premium E-Commerce Store</title>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
+
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
 <!-- ===========================
-        HEADER START
-============================ -->
+        HEADER
+=========================== -->
 
 <header>
 
     <nav class="navbar">
 
+        <!-- Logo -->
+
         <div class="logo">
 
-            <h2>
+            <a href="#">
+
                 <i class="fa-solid fa-cart-shopping"></i>
+
                 ShopIndia
-            </h2>
+
+            </a>
 
         </div>
 
-        <!-- Hamburger Menu -->
+        <!-- Navigation -->
 
-        <div class="menu-toggle" id="menuToggle">
-
-<i class="fa-solid fa-bars"></i>
-
-</div>
         <ul class="nav-links" id="navLinks">
 
-    <li><a href="#home">Home</a></li>
-    <li><a href="#categories">Categories</a></li>
-    <li><a href="#products">Products</a></li>
-    <li><a href="#offers">Offers</a></li>
-    <li><a href="#brands">Brands</a></li>
-    <li><a href="#reviews">Reviews</a></li>
-    <li><a href="#contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
 
-</ul>
+            <li><a href="#categories">Categories</a></li>
+
+            <li><a href="#products">Products</a></li>
+
+            <li><a href="#offers">Offers</a></li>
+
+            <li><a href="#reviews">Reviews</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+        <!-- Search -->
 
         <div class="search-box">
 
-            <input type="text" placeholder="Search Products">
+            <input type="text" placeholder="Search products...">
 
             <button>
 
@@ -71,13 +81,33 @@
 
         </div>
 
-        <div class="icons">
+        <!-- Right Icons -->
 
-            <i class="fa-regular fa-heart"></i>
+        <div class="nav-icons">
 
-            <i class="fa-solid fa-cart-shopping"></i>
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
 
-            <i class="fa-solid fa-user"></i>
+            <a href="#" class="cart">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span>0</span>
+
+            </a>
+
+            <a href="#" class="login-btn">
+
+                Login
+
+            </a>
+
+        </div>
+
+        <!-- Mobile Menu -->
+
+        <div class="menu-toggle" id="menuToggle">
+
+            <i class="fa-solid fa-bars"></i>
 
         </div>
 
@@ -87,31 +117,31 @@
 
 <!-- ===========================
         HERO SECTION
-============================ -->
+=========================== -->
 
 <section class="hero" id="home">
 
-    <div class="hero-left">
+    <div class="hero-content">
 
-        <span class="sale-tag">
+        <span class="offer-tag">
 
-            🔥 BIG SUMMER SALE 2026
+            🔥 Mega Sale 2026
 
         </span>
 
         <h1>
 
-            Discover The Best
-            Premium Products
-            Online
+            Shop Smart,
+            <br>
+            Live Better
 
         </h1>
 
         <p>
 
-            Shop Mobiles, Laptops, Fashion,
-            Electronics, Accessories and much more
-            with exciting discounts and fast delivery.
+            Discover premium electronics, smartphones,
+            laptops, fashion and accessories at unbeatable
+            prices with fast delivery across India.
 
         </p>
 
@@ -123,9 +153,9 @@
 
             </a>
 
-            <a href="#offers" class="btn2">
+            <a href="#categories" class="btn-outline">
 
-                Today's Deals
+                Explore
 
             </a>
 
@@ -145,7 +175,7 @@
 
                 <i class="fa-solid fa-shield-halved"></i>
 
-                <span>100% Secure</span>
+                <span>Secure Payment</span>
 
             </div>
 
@@ -161,18 +191,18 @@
 
     </div>
 
-    <div class="hero-right">
+    <div class="hero-image">
 
-        <div class="offer-circle">
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800"
+            alt="Smartphone">
 
-            <h2>40%</h2>
+        <div class="discount-card">
 
-            <span>OFF</span>
+            <h2>50%</h2>
+
+            <p>OFF</p>
 
         </div>
-
-        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=900"
-            alt="Premium Headphone">
 
     </div>
 
@@ -180,7 +210,7 @@
 
 <!-- ===========================
         FEATURES SECTION
-============================ -->
+=========================== -->
 
 <section class="features">
 
@@ -188,19 +218,19 @@
 
         <i class="fa-solid fa-truck-fast"></i>
 
-        <h3>Free Delivery</h3>
+        <h3>Free Shipping</h3>
 
-        <p>Free shipping on orders above ₹999</p>
+        <p>Free delivery on orders above ₹999 anywhere in India.</p>
 
     </div>
 
     <div class="feature-card">
 
-        <i class="fa-solid fa-credit-card"></i>
+        <i class="fa-solid fa-shield-halved"></i>
 
-        <h3>Secure Payment</h3>
+        <h3>100% Secure Payment</h3>
 
-        <p>100% Safe & Secure Payments</p>
+        <p>Your payment is protected with trusted payment gateways.</p>
 
     </div>
 
@@ -210,7 +240,7 @@
 
         <h3>Easy Returns</h3>
 
-        <p>7 Days Easy Return Policy</p>
+        <p>7-day easy return and replacement on selected products.</p>
 
     </div>
 
@@ -218,211 +248,193 @@
 
         <i class="fa-solid fa-headset"></i>
 
-        <h3>24/7 Support</h3>
+        <h3>24×7 Support</h3>
 
-        <p>Always here to help you</p>
+        <p>Our customer support team is available anytime.</p>
 
     </div>
 
 </section>
 
 <!-- ===========================
-        SHOP BY CATEGORY
-============================ -->
+        CATEGORIES
+=========================== -->
 
 <section class="categories" id="categories">
 
-    <div class="section-heading">
+    <div class="section-title">
 
-        <span>TOP CATEGORIES</span>
+        <span>SHOP BY CATEGORY</span>
 
-        <h2>Shop By Category</h2>
+        <h2>Popular Categories</h2>
 
-        <p>
-            Find your favourite products from our premium collection.
-        </p>
+        <p>Explore our most popular shopping categories.</p>
 
     </div>
 
-    <div class="category-container">
+    <div class="category-grid">
 
         <div class="category-card">
 
-            <div class="category-icon">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400"
+                alt="Mobile">
 
-                <i class="fa-solid fa-mobile-screen-button"></i>
-
-            </div>
-
-            <h3>Mobiles</h3>
-
-            <p>150+ Products</p>
+            <h3>Smartphones</h3>
 
         </div>
 
         <div class="category-card">
 
-            <div class="category-icon">
-
-                <i class="fa-solid fa-laptop"></i>
-
-            </div>
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400"
+                alt="Laptop">
 
             <h3>Laptops</h3>
 
-            <p>80+ Products</p>
+        </div>
+
+        <div class="category-card">
+
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400"
+                alt="Headphones">
+
+            <h3>Headphones</h3>
 
         </div>
 
         <div class="category-card">
 
-            <div class="category-icon">
+            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=400"
+                alt="Watch">
 
-                <i class="fa-solid fa-headphones"></i>
-
-            </div>
-
-            <h3>Accessories</h3>
-
-            <p>250+ Products</p>
+            <h3>Smart Watches</h3>
 
         </div>
 
         <div class="category-card">
 
-            <div class="category-icon">
+             <img src="https://images.unsplash.com/photo-1589003077984-894e133dabab?w=600"
+                alt="Bluetooth Speaker">
 
-                <i class="fa-solid fa-shirt"></i>
-
-            </div>
-
-            <h3>Fashion</h3>
-
-            <p>400+ Products</p>
+            <h3>Bluetooth Speakers</h3>
 
         </div>
 
         <div class="category-card">
 
-            <div class="category-icon">
+            <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400"
+                alt="Keyboard">
 
-                <i class="fa-solid fa-tv"></i>
-
-            </div>
-
-            <h3>Electronics</h3>
-
-            <p>220+ Products</p>
+            <h3>Gaming Keyboard</h3>
 
         </div>
 
         <div class="category-card">
 
-            <div class="category-icon">
+            <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=400"
+                alt="Mouse">
 
-                <i class="fa-solid fa-gamepad"></i>
-
-            </div>
-
-            <h3>Gaming</h3>
-
-            <p>120+ Products</p>
+            <h3>Gaming Mouse</h3>
 
         </div>
 
         <div class="category-card">
 
-            <div class="category-icon">
+            <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=400"
+                alt="Monitor">
 
-                <i class="fa-solid fa-clock"></i>
-
-            </div>
-
-            <h3>Smart Watch</h3>
-
-            <p>95+ Products</p>
-
-        </div>
-
-        <div class="category-card">
-
-            <div class="category-icon">
-
-                <i class="fa-solid fa-camera"></i>
-
-            </div>
-
-            <h3>Camera</h3>
-
-            <p>60+ Products</p>
+            <h3>LED Monitor</h3>
 
         </div>
 
     </div>
 
 </section>
+
+<!-- ===========================
+        PROMO BANNER
+=========================== -->
+
+<section class="promo-banner">
+
+    <div class="promo-content">
+
+        <div class="promo-text">
+
+            <span>LIMITED TIME OFFER</span>
+
+            <h2>Big Saving Days</h2>
+
+            <p>
+
+                Get up to <strong>70% OFF</strong> on Electronics,
+                Gadgets and Accessories.
+
+            </p>
+
+            <a href="#products" class="btn">
+
+                Shop Deals
+
+            </a>
+
+        </div>
+
+        <div class="promo-image">
+
+            <img src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae?w=700"
+                alt="Sale Banner">
+
+        </div>
+
+    </div>
+
+</section>
+
 <!-- ===========================
         FEATURED PRODUCTS
-============================ -->
+=========================== -->
 
 <section class="products" id="products">
 
-    <div class="section-heading">
+    <div class="section-title">
 
         <span>FEATURED PRODUCTS</span>
 
         <h2>Trending Products</h2>
 
-        <p>Best selling products with exciting offers.</p>
+        <p>Discover our best-selling gadgets with amazing offers.</p>
 
     </div>
 
-    <div class="product-container">
+    <div class="product-grid">
 
         <!-- Product 1 -->
 
         <div class="product-card">
 
-            <span class="badge">20% OFF</span>
+            <span class="discount">-20%</span>
 
-            <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15.jpg" alt="iPhone 15">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="iPhone">
 
             <div class="product-info">
 
-                <h3>Apple iPhone 15</h3>
+                <h3>iPhone 16 Pro</h3>
 
                 <div class="rating">
-
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-
+                    ⭐⭐⭐⭐⭐
                 </div>
 
-                <div class="price">
+                <h4>₹1,09,999 <span>₹1,29,999</span></h4>
 
-                    ₹74,999
+                <div class="product-btns">
 
-                    <span>₹79,999</span>
-
-                </div>
-
-                <div class="product-buttons">
-
-                    <button onclick="showPopup()">
-
+                    <button class="cart-btn">
                         <i class="fa-solid fa-cart-shopping"></i>
-
                         Add to Cart
-
                     </button>
 
                     <button class="buy-btn">
-
                         Buy Now
-
                     </button>
 
                 </div>
@@ -435,42 +447,29 @@
 
         <div class="product-card">
 
-            <span class="badge">15% OFF</span>
+            <span class="discount">-15%</span>
 
-            <img src="https://fdn2.gsmarena.com/vv/bigpic/oneplus-12.jpg" alt="OnePlus 12">
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500" alt="Laptop">
 
             <div class="product-info">
 
-                <h3>OnePlus 12</h3>
+                <h3>Gaming Laptop</h3>
 
                 <div class="rating">
-
-                    ★★★★★
-
+                    ⭐⭐⭐⭐⭐
                 </div>
 
-                <div class="price">
+                <h4>₹79,999 <span>₹94,999</span></h4>
 
-                    ₹54,999
+                <div class="product-btns">
 
-                    <span>₹59,999</span>
-
-                </div>
-
-                <div class="product-buttons">
-
-                    <button onclick="showPopup()">
-
+                    <button class="cart-btn">
                         <i class="fa-solid fa-cart-shopping"></i>
-
                         Add to Cart
-
                     </button>
 
                     <button class="buy-btn">
-
                         Buy Now
-
                     </button>
 
                 </div>
@@ -483,42 +482,29 @@
 
         <div class="product-card">
 
-            <span class="badge">30% OFF</span>
+            <span class="discount">-35%</span>
 
-            <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=600" alt="Gaming Mouse">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Headphones">
 
             <div class="product-info">
 
-                <h3>Gaming Mouse</h3>
+                <h3>Wireless Headphones</h3>
 
                 <div class="rating">
-
-                    ★★★★☆
-
+                    ⭐⭐⭐⭐☆
                 </div>
 
-                <div class="price">
+                <h4>₹4,999 <span>₹7,999</span></h4>
 
-                    ₹1,299
+                <div class="product-btns">
 
-                    <span>₹1,899</span>
-
-                </div>
-
-                <div class="product-buttons">
-
-                    <button onclick="showPopup()">
-
+                    <button class="cart-btn">
                         <i class="fa-solid fa-cart-shopping"></i>
-
                         Add to Cart
-
                     </button>
 
                     <button class="buy-btn">
-
                         Buy Now
-
                     </button>
 
                 </div>
@@ -531,42 +517,29 @@
 
         <div class="product-card">
 
-            <span class="badge">25% OFF</span>
+            <span class="discount">-25%</span>
 
-            <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=600" alt="Smart Watch">
+            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=500" alt="Watch">
 
             <div class="product-info">
 
                 <h3>Smart Watch</h3>
 
                 <div class="rating">
-
-                    ★★★★★
-
+                    ⭐⭐⭐⭐⭐
                 </div>
 
-                <div class="price">
+                <h4>₹6,999 <span>₹8,999</span></h4>
 
-                    ₹3,999
+                <div class="product-btns">
 
-                    <span>₹5,499</span>
-
-                </div>
-
-                <div class="product-buttons">
-
-                    <button onclick="showPopup()">
-
+                    <button class="cart-btn">
                         <i class="fa-solid fa-cart-shopping"></i>
-
                         Add to Cart
-
                     </button>
 
                     <button class="buy-btn">
-
                         Buy Now
-
                     </button>
 
                 </div>
@@ -575,110 +548,34 @@
 
         </div>
 
-    </div>
-
-</section>
-
-<!-- ===========================
-        BEST SELLERS
-============================ -->
-
-<section class="best-sellers">
-
-    <div class="section-heading">
-
-        <span>BEST SELLERS</span>
-
-        <h2>Top Selling Products</h2>
-
-        <p>Most loved products by our customers.</p>
-
-    </div>
-
-    <div class="product-container">
-
-        <!-- Product 1 -->
+        <!-- Product 5 -->
 
         <div class="product-card">
 
-            <span class="badge hot">HOT</span>
+            <span class="discount">-18%</span>
 
-            <img src="https://m.media-amazon.com/images/I/71kr3WAj1FL._SX679_.jpg"
-                alt="Mechanical Keyboard">
-
-            <div class="product-info">
-
-                <h3>RGB Mechanical Keyboard</h3>
-
-                <div class="rating">★★★★★</div>
-
-                <div class="price">
-
-                    ₹2,999
-
-                    <span>₹3,499</span>
-
-                </div>
-
-                <div class="product-buttons">
-
-                    <button onclick="showPopup()">
-
-                        <i class="fa-solid fa-cart-shopping"></i>
-
-                        Add to Cart
-
-                    </button>
-
-                    <button class="buy-btn">
-
-                        Buy Now
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Product 2 -->
-
-        <div class="product-card">
-
-            <span class="badge new">NEW</span>
-
-            <img src="https://images.unsplash.com/photo-1589003077984-894e133dabab?w=600"
+             <img src="https://images.unsplash.com/photo-1589003077984-894e133dabab?w=600"
                 alt="Bluetooth Speaker">
 
             <div class="product-info">
 
                 <h3>Bluetooth Speaker</h3>
 
-                <div class="rating">★★★★☆</div>
-
-                <div class="price">
-
-                    ₹2,199
-
-                    <span>₹2,799</span>
-
+                <div class="rating">
+                    ⭐⭐⭐⭐☆
                 </div>
 
-                <div class="product-buttons">
+                <h4>₹2,999 <span>₹3,699</span></h4>
 
-                    <button onclick="showPopup()">
+                <div class="product-btns">
 
+                    <button class="cart-btn">
                         <i class="fa-solid fa-cart-shopping"></i>
-
                         Add to Cart
-
                     </button>
 
                     <button class="buy-btn">
-
                         Buy Now
-
                     </button>
 
                 </div>
@@ -687,43 +584,33 @@
 
         </div>
 
-        <!-- Product 3 -->
+        <!-- Product 6 -->
 
         <div class="product-card">
 
-            <span class="badge sale">SALE</span>
+            <span class="discount">-30%</span>
 
-            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600"
-                alt="Wireless Headphones">
+            <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500" alt="Keyboard">
 
             <div class="product-info">
 
-                <h3>Wireless Headphones</h3>
+                <h3>RGB Keyboard</h3>
 
-                <div class="rating">★★★★★</div>
-
-                <div class="price">
-
-                    ₹2,499
-
-                    <span>₹3,299</span>
-
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
                 </div>
 
-                <div class="product-buttons">
+                <h4>₹3,499 <span>₹4,999</span></h4>
 
-                    <button onclick="showPopup()">
+                <div class="product-btns">
 
+                    <button class="cart-btn">
                         <i class="fa-solid fa-cart-shopping"></i>
-
                         Add to Cart
-
                     </button>
 
                     <button class="buy-btn">
-
                         Buy Now
-
                     </button>
 
                 </div>
@@ -738,190 +625,65 @@
 
 <!-- ===========================
         DEAL OF THE DAY
-============================ -->
+=========================== -->
 
-<section class="offers" id="offers">
+<section class="deal-section" id="offers">
 
-    <div class="deal-container">
+    <div class="deal-left">
 
-        <div class="deal-left">
+        <span class="deal-badge">
+            🔥 Deal of the Day
+        </span>
 
-            <span>LIMITED OFFER</span>
+        <h2>Samsung Galaxy S24 Ultra</h2>
 
-            <h2>Deal of the Day</h2>
+        <p>
+            Experience the power of AI with the latest Samsung flagship.
+            Limited stock available. Grab this amazing offer before it ends.
+        </p>
 
-            <p>
+        <div class="deal-price">
 
-                Samsung Galaxy S24 with AI Camera,
-                Snapdragon Processor and AMOLED Display.
+            <h3>₹94,999</h3>
 
-            </p>
-
-            <h3>
-
-                ₹69,999
-
-                <span>₹79,999</span>
-
-            </h3>
-
-            <button onclick="showPopup()" class="btn">
-
-                Shop Now
-
-            </button>
+            <span>₹1,19,999</span>
 
         </div>
 
-        <div class="deal-right">
+        <a href="#" class="btn">
 
-            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=700"
-                alt="Samsung Galaxy">
+            Buy Now
 
-        </div>
+        </a>
+
+    </div>
+
+    <div class="deal-right">
+
+        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=700"
+            alt="Samsung Phone">
 
     </div>
 
 </section>
 
 <!-- ===========================
-        LATEST ARRIVALS
-============================ -->
+          TOP BRANDS
+=========================== -->
 
-<section class="latest-arrivals">
+<section class="brands">
 
-    <div class="section-heading">
-
-        <span>NEW ARRIVALS</span>
-
-        <h2>Latest Products</h2>
-
-        <p>Fresh arrivals just for you.</p>
-
-    </div>
-
-    <div class="product-container">
-
-        <div class="product-card">
-
-            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600"
-                alt="Smartphone">
-
-            <div class="product-info">
-
-                <h3>Premium Smartphone</h3>
-
-                <div class="rating">★★★★★</div>
-
-                <div class="price">₹49,999</div>
-
-                <div class="product-buttons">
-
-                    <button onclick="showPopup()">
-
-                        Add to Cart
-
-                    </button>
-
-                    <button class="buy-btn">
-
-                        Buy Now
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="product-card">
-
-            <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=600"
-                alt="Laptop">
-
-            <div class="product-info">
-
-                <h3>Gaming Laptop</h3>
-
-                <div class="rating">★★★★★</div>
-
-                <div class="price">₹89,999</div>
-
-                <div class="product-buttons">
-
-                    <button onclick="showPopup()">
-
-                        Add to Cart
-
-                    </button>
-
-                    <button class="buy-btn">
-
-                        Buy Now
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="product-card">
-
-            <img src="https://images.unsplash.com/photo-1518444065439-e933c06ce9cd?w=600"
-                alt="Alexa">
-
-            <div class="product-info">
-
-                <h3>Amazon Alexa</h3>
-
-                <div class="rating">★★★★☆</div>
-
-                <div class="price">₹1,899</div>
-
-                <div class="product-buttons">
-
-                    <button onclick="showPopup()">
-
-                        Add to Cart
-
-                    </button>
-
-                    <button class="buy-btn">
-
-                        Buy Now
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ===========================
-        TOP BRANDS
-============================ -->
-
-<section class="brands" id="brands">
-
-    <div class="section-heading">
+    <div class="section-title">
 
         <span>TOP BRANDS</span>
 
-        <h2>Trusted Brands</h2>
+        <h2>Trusted Worldwide Brands</h2>
 
-        <p>We partner with the world's most trusted brands.</p>
+        <p>Only genuine products from premium brands.</p>
 
     </div>
 
-    <div class="brand-container">
+    <div class="brand-grid">
 
         <div class="brand-card">
             <i class="fa-brands fa-apple"></i>
@@ -929,7 +691,7 @@
         </div>
 
         <div class="brand-card">
-            <i class="fa-solid fa-mobile-screen"></i>
+            <i class="fa-solid fa-mobile-screen-button"></i>
             <h3>Samsung</h3>
         </div>
 
@@ -944,7 +706,7 @@
         </div>
 
         <div class="brand-card">
-            <i class="fa-solid fa-gamepad"></i>
+            <i class="fa-solid fa-keyboard"></i>
             <h3>Logitech</h3>
         </div>
 
@@ -958,42 +720,28 @@
 </section>
 
 <!-- ===========================
-      WHY CHOOSE US
-============================ -->
+        WHY CHOOSE US
+=========================== -->
 
 <section class="why-us">
 
-    <div class="section-heading">
+    <div class="section-title">
 
-        <span>WHY CHOOSE US</span>
+        <span>WHY SHOP WITH US</span>
 
         <h2>Why Customers Love ShopIndia</h2>
 
     </div>
 
-    <div class="why-container">
+    <div class="why-grid">
 
         <div class="why-card">
 
-            <i class="fa-solid fa-box-open"></i>
+            <i class="fa-solid fa-shield-halved"></i>
 
-            <h3>Premium Quality</h3>
+            <h3>Secure Shopping</h3>
 
-            <p>
-                Genuine branded products with warranty.
-            </p>
-
-        </div>
-
-        <div class="why-card">
-
-            <i class="fa-solid fa-wallet"></i>
-
-            <h3>Affordable Prices</h3>
-
-            <p>
-                Best prices with amazing discounts.
-            </p>
+            <p>100% secure online payments with trusted gateways.</p>
 
         </div>
 
@@ -1003,9 +751,17 @@
 
             <h3>Fast Delivery</h3>
 
-            <p>
-                Delivery across India within 2-5 days.
-            </p>
+            <p>Express shipping across India in just a few days.</p>
+
+        </div>
+
+        <div class="why-card">
+
+            <i class="fa-solid fa-rotate-left"></i>
+
+            <h3>Easy Return</h3>
+
+            <p>Simple replacement and return policy.</p>
 
         </div>
 
@@ -1013,11 +769,9 @@
 
             <i class="fa-solid fa-headset"></i>
 
-            <h3>24/7 Support</h3>
+            <h3>24×7 Support</h3>
 
-            <p>
-                Friendly customer support anytime.
-            </p>
+            <p>Friendly customer support whenever you need help.</p>
 
         </div>
 
@@ -1026,114 +780,20 @@
 </section>
 
 <!-- ===========================
-        OUR SERVICES
-============================ -->
-
-<section class="services">
-
-    <div class="section-heading">
-
-        <span>OUR SERVICES</span>
-
-        <h2>What We Offer</h2>
-
-    </div>
-
-    <div class="service-container">
-
-        <div class="service-card">
-
-            <i class="fa-solid fa-truck"></i>
-
-            <h3>Free Shipping</h3>
-
-            <p>
-                Free shipping on selected products.
-            </p>
-
-        </div>
-
-        <div class="service-card">
-
-            <i class="fa-solid fa-credit-card"></i>
-
-            <h3>Secure Payment</h3>
-
-            <p>
-                Pay securely using trusted gateways.
-            </p>
-
-        </div>
-
-        <div class="service-card">
-
-            <i class="fa-solid fa-rotate-left"></i>
-
-            <h3>Easy Return</h3>
-
-            <p>
-                7-Day hassle-free replacement.
-            </p>
-
-        </div>
-
-        <div class="service-card">
-
-            <i class="fa-solid fa-gift"></i>
-
-            <h3>Special Offers</h3>
-
-            <p>
-                Daily discounts and festive sales.
-            </p>
-
-        </div>
-
-        <div class="service-card">
-
-            <i class="fa-solid fa-shield-halved"></i>
-
-            <h3>Product Warranty</h3>
-
-            <p>
-                Genuine products with brand warranty.
-            </p>
-
-        </div>
-
-        <div class="service-card">
-
-            <i class="fa-solid fa-comments"></i>
-
-            <h3>Live Support</h3>
-
-            <p>
-                Chat with our experts anytime.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ======================================
         CUSTOMER REVIEWS
-======================================= -->
+=========================== -->
 
 <section class="reviews" id="reviews">
 
-    <div class="section-heading">
+    <div class="section-title">
 
         <span>TESTIMONIALS</span>
 
         <h2>What Our Customers Say</h2>
 
-        <p>Thousands of happy customers across India.</p>
-
     </div>
 
-    <div class="review-container">
+    <div class="review-grid">
 
         <div class="review-card">
 
@@ -1142,11 +802,14 @@
             <h3>Rahul Sharma</h3>
 
             <div class="stars">
-                ★★★★★
+                ⭐⭐⭐⭐⭐
             </div>
 
             <p>
-                Amazing shopping experience. Fast delivery and excellent product quality.
+
+                Excellent service and very fast delivery.
+                The product quality is amazing.
+
             </p>
 
         </div>
@@ -1158,27 +821,34 @@
             <h3>Priya Patel</h3>
 
             <div class="stars">
-                ★★★★★
+                ⭐⭐⭐⭐⭐
             </div>
 
             <p>
-                Best online shopping website. I love the premium design and service.
+
+                Best shopping experience.
+                Premium products with great discounts.
+
             </p>
 
         </div>
 
         <div class="review-card">
 
-            <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="Customer">
+            <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="Customer">
 
             <h3>Aman Verma</h3>
 
             <div class="stars">
-                ★★★★☆
+                ⭐⭐⭐⭐☆
+
             </div>
 
             <p>
-                Genuine products with quick support. Highly recommended.
+
+                I love the design and the customer support.
+                Highly recommended.
+
             </p>
 
         </div>
@@ -1187,43 +857,43 @@
 
 </section>
 
-<!-- ======================================
+<!-- ===========================
         NEWSLETTER
-======================================= -->
+=========================== -->
 
 <section class="newsletter">
 
-    <div class="newsletter-box">
+    <div class="section-title">
 
-        <h2>Subscribe Newsletter</h2>
+        <span>NEWSLETTER</span>
 
-        <p>
-            Get latest offers, discounts and new arrivals directly in your inbox.
-        </p>
+        <h2>Stay Updated</h2>
 
-        <form>
-
-            <input type="email" placeholder="Enter Your Email">
-
-            <button type="submit">
-
-                Subscribe
-
-            </button>
-
-        </form>
+        <p>Subscribe to receive exclusive offers and new arrivals.</p>
 
     </div>
 
+    <form class="newsletter-form">
+
+        <input type="email" placeholder="Enter your email">
+
+        <button type="submit" class="btn">
+
+            Subscribe
+
+        </button>
+
+    </form>
+
 </section>
 
-<!-- ======================================
-              FAQ
-======================================= -->
+<!-- ===========================
+            FAQ
+=========================== -->
 
 <section class="faq">
 
-    <div class="section-heading">
+    <div class="section-title">
 
         <span>FAQ</span>
 
@@ -1231,51 +901,39 @@
 
     </div>
 
-    <div class="faq-box">
+    <div class="faq-container">
 
         <details>
-
             <summary>How many days does delivery take?</summary>
-
-            <p>Delivery usually takes 2–5 business days.</p>
-
+            <p>Usually between 2–5 working days.</p>
         </details>
 
         <details>
-
-            <summary>Can I return my product?</summary>
-
-            <p>Yes, we offer a 7-day easy return policy.</p>
-
+            <summary>Can I return a product?</summary>
+            <p>Yes, you can return products within 7 days.</p>
         </details>
 
         <details>
-
-            <summary>Do products come with warranty?</summary>
-
-            <p>Yes, branded products include official warranty.</p>
-
+            <summary>Is Cash On Delivery available?</summary>
+            <p>Yes, COD is available on selected products.</p>
         </details>
 
         <details>
-
-            <summary>Which payment methods are accepted?</summary>
-
-            <p>UPI, Credit Card, Debit Card, Net Banking & COD.</p>
-
+            <summary>Do you provide warranty?</summary>
+            <p>Yes, all branded products include official warranty.</p>
         </details>
 
     </div>
 
 </section>
 
-<!-- ======================================
-             CONTACT
-======================================= -->
+<!-- ===========================
+          CONTACT
+=========================== -->
 
 <section class="contact" id="contact">
 
-    <div class="section-heading">
+    <div class="section-title">
 
         <span>CONTACT US</span>
 
@@ -1283,35 +941,31 @@
 
     </div>
 
-    <div class="contact-container">
+    <div class="contact-wrapper">
 
         <div class="contact-info">
 
             <h3>ShopIndia</h3>
 
-            <p>
-                Your trusted destination for electronics, fashion and gadgets.
-            </p>
+            <p><i class="fa-solid fa-location-dot"></i> Ahmedabad, Gujarat, India</p>
 
-            <p><i class="fa-solid fa-location-dot"></i> Ahmedabad, Gujarat</p>
+            <p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
 
-            <p><i class="fa-solid fa-phone"></i> +91 8000747574</p>
-
-            <p><i class="fa-solid fa-envelope"></i> keyurjain15@icloud.com</p>
+            <p><i class="fa-solid fa-envelope"></i> support@shopindia.com</p>
 
         </div>
 
         <form class="contact-form">
 
-            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Your Name" required>
 
-            <input type="email" placeholder="Email">
+            <input type="email" placeholder="Email Address" required>
 
             <input type="text" placeholder="Subject">
 
-            <textarea rows="6" placeholder="Message"></textarea>
+            <textarea rows="6" placeholder="Write your message..."></textarea>
 
-            <button type="submit">
+            <button class="btn">
 
                 Send Message
 
@@ -1323,60 +977,72 @@
 
 </section>
 
-<!-- ======================================
-             FOOTER
-======================================= -->
+<!-- ===========================
+            FOOTER
+=========================== -->
 
 <footer>
 
     <div class="footer-container">
 
-        <div class="footer-about">
+        <div class="footer-box">
 
             <h2>ShopIndia</h2>
 
             <p>
 
-                Premium Online Shopping Store for Electronics,
-                Fashion and Accessories.
+                India's Premium Online Shopping Website
+                for Electronics, Fashion and Accessories.
 
             </p>
 
         </div>
 
-        <div class="footer-links">
+        <div class="footer-box">
 
             <h3>Quick Links</h3>
 
             <a href="#home">Home</a>
+
             <a href="#categories">Categories</a>
+
             <a href="#products">Products</a>
+
+            <a href="#offers">Offers</a>
+
             <a href="#contact">Contact</a>
 
         </div>
 
-        <div class="footer-links">
+        <div class="footer-box">
 
             <h3>Customer Care</h3>
 
-            <a href="#">Shipping</a>
-            <a href="#">Returns</a>
+            <a href="#">Shipping Policy</a>
+
+            <a href="#">Return Policy</a>
+
             <a href="#">Privacy Policy</a>
+
             <a href="#">Terms & Conditions</a>
 
         </div>
 
-        <div class="footer-social">
+        <div class="footer-box">
 
             <h3>Follow Us</h3>
 
-            <a href="#"><i class="fab fa-facebook"></i></a>
+            <div class="social-icons">
 
-            <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
 
-            <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
 
-            <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+            </div>
 
         </div>
 
@@ -1384,27 +1050,27 @@
 
     <div class="copyright">
 
-        © 2026 ShopIndia. All Rights Reserved.
+        © 2026 ShopIndia | All Rights Reserved.
 
     </div>
 
 </footer>
 
-<!-- ======================================
-        POPUP MESSAGE
-======================================= -->
+<!-- ===========================
+        ADD TO CART POPUP
+=========================== -->
 
 <div class="popup" id="popup">
 
     <i class="fa-solid fa-circle-check"></i>
 
-    <h3>Product Added Successfully!</h3>
+    <span>Product Added Successfully!</span>
 
 </div>
 
-<!-- ======================================
+<!-- ===========================
       FLOATING BUTTONS
-======================================= -->
+=========================== -->
 
 <a href="#" class="back-top">
 
@@ -1412,46 +1078,94 @@
 
 </a>
 
-<a href="https://wa.me/918000747574" class="whatsapp">
+<a href="https://wa.me/919876543210" class="whatsapp">
 
     <i class="fab fa-whatsapp"></i>
 
 </a>
 
-<!-- ======================================
-       JAVASCRIPT
-======================================= -->
+<!-- JavaScript -->
 
-<script>
+// ============================
+// MOBILE MENU
+// ============================
 
-function showPopup(){
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
 
-const popup=document.getElementById("popup");
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
 
-popup.classList.add("show");
+// ============================
+// BACK TO TOP
+// ============================
 
-setTimeout(()=>{
+const backTop = document.querySelector(".back-top");
 
-popup.classList.remove("show");
+window.addEventListener("scroll", () => {
 
-},2000);
+    if (window.scrollY > 300) {
 
-}
+        backTop.style.display = "flex";
 
-</script>
-<script>
+    } else {
 
-const menu=document.getElementById("menuToggle");
+        backTop.style.display = "none";
 
-const nav=document.getElementById("navLinks");
+    }
 
-menu.onclick=function(){
+});
 
-nav.classList.toggle("active");
+// ============================
+// ADD TO CART POPUP
+// ============================
 
-}
+const cartButtons = document.querySelectorAll(".cart-btn");
+const popup = document.getElementById("popup");
 
-</script>
+cartButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        popup.classList.add("show");
+
+        setTimeout(() => {
+
+            popup.classList.remove("show");
+
+        }, 2000);
+
+    });
+
+});
+
+// ============================
+// SMOOTH SCROLL
+// ============================
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+    anchor.addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute("href"));
+
+        if (target) {
+
+            target.scrollIntoView({
+
+                behavior: "smooth"
+
+            });
+
+        }
+
+    });
+
+});
+
 </body>
 
 </html>
