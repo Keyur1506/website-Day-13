@@ -120,6 +120,7 @@ section{
 
 }
 
+
 /*=========================================
             NAVBAR
 =========================================*/
@@ -140,114 +141,48 @@ header{
 
 }
 
-.navbar{
-
-    max-width:1300px;
-
-    margin:auto;
-
-    padding:18px 20px;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    flex-wrap:wrap;
-
-    gap:20px;
-
-}
-
-.logo h2{
-
-    color:#fff;
-
+.menu-toggle{
+    display:none;
     font-size:28px;
-
+    color:#fff;
+    cursor:pointer;
 }
 
-.logo i{
+@media (max-width:768px){
 
-    color:#8d6bff;
+    .menu-toggle{
+        display:block;
+    }
 
+    .nav-links{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        background:#111827;
+        margin-top:15px;
+        border-radius:12px;
+        padding:15px 0;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li{
+        text-align:center;
+        margin:10px 0;
+    }
+
+    .search-box,
+    .icons{
+        display:none;
+    }
+
+    .navbar{
+        justify-content:space-between;
+        align-items:center;
+    }
 }
-
-.nav-links{
-
-    display:flex;
-
-    gap:25px;
-
-    flex-wrap:wrap;
-
-}
-
-.nav-links a{
-
-    color:white;
-
-    transition:.3s;
-
-}
-
-.nav-links a:hover{
-
-    color:#8d6bff;
-
-}
-
-.search-box{
-
-    display:flex;
-
-    background:rgba(255,255,255,.08);
-
-    border-radius:40px;
-
-    overflow:hidden;
-
-}
-
-.search-box input{
-
-    border:none;
-
-    outline:none;
-
-    background:transparent;
-
-    color:white;
-
-    padding:12px;
-
-    width:170px;
-
-}
-
-.search-box button{
-
-    width:50px;
-
-    background:#7c4dff;
-
-    color:white;
-
-}
-
-.icons{
-
-    display:flex;
-
-    gap:18px;
-
-    font-size:22px;
-
-    color:white;
-
-}
-
 /*=========================================
             HERO
 =========================================*/
