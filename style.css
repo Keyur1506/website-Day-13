@@ -24,9 +24,9 @@ body{
     background:linear-gradient(135deg,#0f172a,#1e1b4b,#312e81);
     color:#fff;
     overflow-x:hidden;
-   body{
-    padding-top:80px;
 }
+body{
+    padding-top:80px;
 }
 
 img{
@@ -104,10 +104,9 @@ header{
     left:0;
     width:100%;
     z-index:9999;
-    background:rgba(15,23,42,0.95);
+    background:rgba(15,23,42,.95);
     backdrop-filter:blur(12px);
 }
-
 .navbar{
     width:90%;
     max-width:1300px;
