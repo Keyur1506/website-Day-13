@@ -24,6 +24,9 @@ body{
     background:linear-gradient(135deg,#0f172a,#1e1b4b,#312e81);
     color:#fff;
     overflow-x:hidden;
+   body{
+    padding-top:80px;
+}
 }
 
 img{
@@ -96,14 +99,13 @@ section{
 ========================================== */
 
 header{
-    position:sticky;
+    position:fixed;
     top:0;
-    z-index:1000;
-    background:rgba(15,23,42,.95);
+    left:0;
+    width:100%;
+    z-index:9999;
+    background:rgba(15,23,42,0.95);
     backdrop-filter:blur(12px);
-   border-bottom-filter:blur(12px);
-   box-shadow:none;
-   transition:all 0.3s ease;
 }
 
 .navbar{
@@ -323,8 +325,11 @@ header{
 @media(max-width:768px){
 
     .menu-toggle{
-        display:block;
+        position:fixed;
+        top:0;
+        width:100%;
         color:#fff;
+    }
     }
 
     .nav-links{
