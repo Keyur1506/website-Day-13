@@ -32,40 +32,33 @@
 =========================== -->
 
 <header>
-
     <nav class="navbar">
 
-        <!-- Logo -->
-
         <div class="logo">
-
-            <a href="#">
-
-                <i class="fa-solid fa-cart-shopping"></i>
-
-                ShopIndia
-
+            <a href="index.html">
+                <i class="fa-solid fa-cart-shopping"></i> ShopIndia
             </a>
-
         </div>
 
-        <!-- Navigation -->
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
 
         <ul class="nav-links" id="navLinks">
-
-            <li><a href="#home">Home</a></li>
-
-            <li><a href="#categories">Categories</a></li>
-
-            <li><a href="#products">Products</a></li>
-
-            <li><a href="#offers">Offers</a></li>
-
-            <li><a href="#reviews">Reviews</a></li>
-
-            <li><a href="#contact">Contact</a></li>
-
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="shop.html">Products</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="brands.html">Brands</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
+
+        <div class="nav-icons">
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+        </div>
 
         <!-- Search -->
 
@@ -1091,11 +1084,10 @@
 // ============================
 // MOBILE MENU
 // ============================
-
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 
-menuToggle.addEventListener("click", () => {
+menuToggle.addEventListener("click", function () {
     navLinks.classList.toggle("active");
 });
 
