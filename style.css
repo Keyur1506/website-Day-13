@@ -101,6 +101,9 @@ header{
     z-index:1000;
     background:rgba(15,23,42,.95);
     backdrop-filter:blur(12px);
+   border-bottom-filter:blur(12px);
+   box-shadow:none;
+   transition:all 0.3s ease;
 }
 
 .navbar{
